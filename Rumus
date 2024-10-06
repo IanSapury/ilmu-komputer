@@ -1,0 +1,45 @@
+def hitung_kecepatan():
+    print ('hitung kecepatan ready!')
+    jarak = float(input('Masukan jarak: '))
+    waktu = float(input('Masukan waktu: '))
+    kecepatan = jarak * waktu
+    print('kecepatan adalah: ', kecepatan, '\n')
+
+def luas_segitiga():
+    print ('hitung luas segitiga')
+    alas = float(input('Masukan alas: '))
+    tinggi = float(input('Masukan tinggi: '))
+    luas = 0.5 * (alas * tinggi)
+    print('luas segitiga adalah: ', luas, '\n')
+
+def luas_balok():
+    print ('hitung luas balok')
+    panjang = float(input('Masukan panjang: '))
+    lebar = float(input('Masukan lebar: '))
+    tinggi = float(input('Masukan tinggi: '))
+    luas = (2*panjang*lebar) + (2*panjang*tinggi) + (2*lebar*tinggi)
+    print('luas balok adalah: ', luas, '\n')
+
+def luas_bola():
+    print ('hitung luas bola')
+    r = float(input('Masukan jari-jari: '))
+    luas = 4 * 3.14 * (r**2)
+    print('luas bola adalah: ', luas, '\n')
+
+
+
+while True:
+    userInput = int(input(
+        'pilih rumus yang aka dipakai: \n\n1.hitung kecepatan\n2.luas segitiga\n3.luas_balok\n4.luas_bola\n\n0.out\n\npilih nomor berapa: '))
+    if(userInput == 1):
+        hitung_kecepatan()
+    elif(userInput == 2):
+        luas_segitiga()
+    elif(userInput == 3):
+        luas_balok()
+    elif(userInput == 4):
+        luas_bola()
+    else:
+        break
+
+hitung_kecepatan()
